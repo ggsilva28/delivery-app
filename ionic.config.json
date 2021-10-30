@@ -1,0 +1,7 @@
+{
+  "name": "pedi-facil",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
