@@ -6,5 +6,18 @@ import { Component } from '@angular/core';
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {}
+  constructor() {
+    this.initializeApp()
+  }
+
+  initializeApp() {
+    this.toggleTheme(false)
+
+    console.log(window.location.hostname)
+  }
+
+
+  toggleTheme(val) {
+    document.body.classList.toggle('dark', val);
+  }
 }

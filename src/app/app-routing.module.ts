@@ -3,13 +3,17 @@ import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
 
 const routes: Routes = [
   {
-    path: 'home',
-    loadChildren: () => import('./home/home.module').then( m => m.HomePageModule)
+    path: '',
+    redirectTo: 'cardapio',
+    pathMatch: 'full'
   },
   {
-    path: '',
-    redirectTo: 'home',
-    pathMatch: 'full'
+    path: 'cardapio',
+    loadChildren: () => import('./pages/cardapio/cardapio.module').then( m => m.CardapioPageModule)
+  },
+  {
+    path: 'restaurante',
+    loadChildren: () => import('./pages/restaurante/restaurante.module').then( m => m.RestaurantePageModule)
   },
 ];
 

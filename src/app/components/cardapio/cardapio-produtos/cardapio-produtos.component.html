@@ -1,0 +1,30 @@
+<div class="cardapio-produtos">
+
+  <ion-segment [scrollable]="true" value="friends" (ionChange)="mudarCategoria($event)">
+    <ion-segment-button value="friends">
+      <ion-label>Pratos da casa</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies">
+      <ion-label>Mais pedidos</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies2">
+      <ion-label>Quentes</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies3">
+      <ion-label>Frios</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies4">
+      <ion-label>Mais frios</ion-label>
+    </ion-segment-button>
+    <ion-segment-button value="enemies5">
+      <ion-label>Ainda mais frios</ion-label>
+    </ion-segment-button>
+  </ion-segment>
+
+
+  <div class="categoria-block" *ngFor="let i of items">
+    <p class="categoria-titulo"> Pratos da casa</p>
+    <app-cardapio-item *ngFor="let i of items"></app-cardapio-item>
+  </div>
+
+</div>
