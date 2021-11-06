@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
+import { ProdutoPage } from 'src/app/pages/produto/produto.page';
 
 @Component({
   selector: 'app-cardapio-item',
@@ -7,8 +9,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardapioItemComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    private modal: ModalController
+  ) { }
 
-  ngOnInit() {}
+  ngOnInit() { }
+
+  async detalhes(){
+    const modalProduto = await this.modal.create({
+      component: ProdutoPage,
+      cssClass: 'modal-produtos'
+    })
+  
+    return await modalProduto.present();
+  }
 
 }

@@ -9,43 +9,6 @@ header {
     height: 100%;
   }
 
-  .actions {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    padding: 15px;
-
-    display: flex;
-    flex-flow: row nowrap;
-    justify-content: space-between;
-    align-items: center;
-
-    ion-button {
-      width: 45px;
-      height: 45px;
-      --box-shadow: none;
-      border-radius: 50%;
-      overflow: hidden;
-      font-size: 14px;
-
-      &::part(native) {
-        padding: 0px;
-      }
-
-      ion-icon {
-        --ionicon-stroke-width: 50px;
-      }
-    }
-
-    .end {
-      ion-button {
-        margin-left: 15px;
-      }
-    }
-  }
-
-
 }
 
 

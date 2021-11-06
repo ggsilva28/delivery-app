@@ -25,6 +25,18 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--ion-color-light-tint);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--ion-color-medium-tint);
+}
+
 .ripple-parent {
   position: relative;
   overflow: hidden;
@@ -40,14 +52,65 @@
   position: relative;
 }
 
-.cursor-pointer:hover{
+.cursor-pointer:hover {
   cursor: pointer;
   user-select: none;
+}
+
+.actions {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 15px;
+
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-between;
+  align-items: center;
+
+  .end {
+    ion-button {
+      margin-left: 15px;
+    }
+  }
+}
+
+.btn-round {
+  width: 45px;
+  height: 45px;
+  --box-shadow: none;
+  border-radius: 50%;
+  overflow: hidden;
+  font-size: 14px;
+
+  &::part(native) {
+    padding: 0px;
+  }
+
+  ion-icon {
+    --ionicon-stroke-width: 50px;
+  }
 }
 
 @media (min-width: 1280px) {
   .mobile-only {
     display: none !important;
+  }
+
+  ion-modal {
+    .modal-wrapper {
+      --border-radius: 5px;
+      box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    }
+
+
+    &.modal-produtos {
+      .modal-wrapper {
+        width: 1024px;
+      }
+    }
+
   }
 }
 
