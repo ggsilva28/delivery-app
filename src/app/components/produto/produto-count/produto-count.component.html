@@ -1,0 +1,5 @@
+<div class="counter" >
+  <div class="item sub cursor-pointer" [ngClass]="{'active': start > min}" (click)="sub()" ><ion-icon name="remove"></ion-icon></div>
+  <div class="item count" >{{start}}</div>
+  <div class="item plus cursor-pointer" [ngClass]="{'active': start < max}" (click)="plus()" ><ion-icon name="add"></ion-icon></div>
+</div>

@@ -1,0 +1,22 @@
+<div class="produto-adicional-header">
+  <div class="titulo">
+    {{titulo}}
+    <span>{{subtitulo}}</span>
+  </div>
+
+  <div class="tipo">
+    {{(obrigatorio) ? 'Obrigatório' : 'Opcional'}}
+  </div>
+</div>
+
+<div class="produto-adicional-list">
+
+  <ion-radio-group *ngIf="type == 'radio'">
+    <app-produto-adicional-opcao *ngFor="let i of itens" [type]="type" [index]="i"></app-produto-adicional-opcao>
+  </ion-radio-group>
+
+  <div *ngIf="type == 'count'">
+    <app-produto-adicional-opcao *ngFor="let i of itens" [type]="type" [index]="i"></app-produto-adicional-opcao>
+  </div>
+
+</div>

@@ -5,8 +5,8 @@
     <div class="actions">
       <div class="start">
         <ion-button color="light" class="btn-round" (click)="close()">
-          <ion-icon color="primary" name="chevron-back-outline" class="mobile-only" ></ion-icon>
-          <ion-icon color="primary" name="close-outline" class="desktop-only" ></ion-icon>
+          <ion-icon color="primary" name="chevron-back-outline" class="mobile-only"></ion-icon>
+          <ion-icon color="primary" name="close-outline" class="desktop-only"></ion-icon>
         </ion-button>
       </div>
 
@@ -23,86 +23,31 @@
 
     <div class="info">
 
-      <div class="nome">Mussum Ipsum</div>
-      <div class="desc">Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
-      <div class="valor">R$ 18,99</div>
+      <div class="detalhes">
+        <div class="nome">Mussum Ipsum</div>
+        <div class="desc">Mussum Ipsum, cacilds vidis litro abertis. Delegadis gente finis, bibendum egestas augue arcu ut est. Si u mundo tá muito paradis? Toma um mé que o mundo vai girarzis!</div>
+        <div class="valor">R$ 18,99</div>
 
+      </div>
+
+      <app-produto-adicional titulo="Selecionar" subtitulo="Selecione uma opção" type="radio"></app-produto-adicional>
+
+      <app-produto-adicional titulo="Adicionais Quantidade" subtitulo="Selecione até 5 itens" type="count"></app-produto-adicional>
 
     </div>
 
   </div>
 </ion-content>
 
+<ion-footer>
+
+  <app-produto-count [start]="1" ></app-produto-count>
+
+  <ion-button>
+    <div class="btn-valor">
+      <div class="valor"> R$ 00,00 </div>
+      <div class="text" expand="block" fill="solid">Adicionar</div>
+    </div>
+  </ion-button>
+
+</ion-footer>

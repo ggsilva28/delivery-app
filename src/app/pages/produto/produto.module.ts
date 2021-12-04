@@ -4,6 +4,8 @@ import { FormsModule } from '@angular/forms';
 
 import { IonicModule } from '@ionic/angular';
 
+import { ComponentsModule } from 'src/app/components/components.module';
+
 import { ProdutoPageRoutingModule } from './produto-routing.module';
 
 import { ProdutoPage } from './produto.page';
@@ -13,6 +15,7 @@ import { ProdutoPage } from './produto.page';
     CommonModule,
     FormsModule,
     IonicModule,
+    ComponentsModule,
     ProdutoPageRoutingModule
   ],
   declarations: [ProdutoPage]

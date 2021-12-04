@@ -1,0 +1,20 @@
+<ion-item *ngIf="type == 'count'" class="produto-adicional-item count">
+  <ion-label>
+    Item
+    <span> R$ 10,00 </span>
+  </ion-label>
+
+  <ion-button *ngIf="!mostrarCount" (click)="mostrarCount= true" fill="clear" slot="end">
+    <ion-icon name="add-outline"></ion-icon>
+  </ion-button>
+
+  <app-produto-count *ngIf="mostrarCount" [start]="1" (change)="countChange($event)"></app-produto-count>
+</ion-item>
+
+<ion-item *ngIf="type == 'radio'" class="produto-adicional-item radio">
+  <ion-label>
+    Item
+    <span> R$ 10,00 </span>
+  </ion-label>
+  <ion-radio slot="end" [value]="index"></ion-radio>
+</ion-item>
