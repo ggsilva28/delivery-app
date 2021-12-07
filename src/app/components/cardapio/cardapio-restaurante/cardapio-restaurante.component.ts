@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 
+//services
+import { RouterService } from 'src/app/services/routes.service';
+
 @Component({
   selector: 'app-cardapio-restaurante',
   templateUrl: './cardapio-restaurante.component.html',
@@ -7,7 +10,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class CardapioRestauranteComponent implements OnInit {
 
-  constructor() { }
+  constructor(
+    public router: RouterService
+  ) { }
 
   ngOnInit() {}
 

@@ -1,9 +1,24 @@
-<ion-header>
+<ion-header class="ion-no-border">
   <ion-toolbar>
-    <ion-title>restaurante</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="cardapio" icon="chevron-back" color="primary"></ion-back-button>
+    </ion-buttons>
+
+    <ion-buttons slot="end">
+      <ion-button color="light" class="btn-round">
+        <ion-icon color="primary" name="share-social-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+
+  <ion-item lines="none" class="restaurante-avatar" >
+    <ion-avatar slot="start">
+      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+    </ion-avatar>
+    <ion-label>Artisan Restaurante</ion-label>
+  </ion-item>
 
 </ion-content>
