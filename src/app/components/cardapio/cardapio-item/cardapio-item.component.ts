@@ -15,12 +15,15 @@ export class CardapioItemComponent implements OnInit {
 
   ngOnInit() { }
 
-  async detalhes(){
+  async detalhes() {
     const modalProduto = await this.modal.create({
       component: ProdutoPage,
-      cssClass: 'modal-produtos'
-    })
+      cssClass: 'modal-produtos',
+      swipeToClose: true,
+      presentingElement: await this.modal.getTop() // Get the top-most ion-modal
   
+    })
+
     return await modalProduto.present();
   }
 

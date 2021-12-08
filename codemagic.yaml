@@ -1,0 +1,21 @@
+workflows:
+  teste-workflow:
+    name: Ionic Cypress Teste
+    max_build_duration: 120
+    instance_type: mac_mini
+    triggering:
+      events:
+        - push
+        - tag
+        - pull_request
+      branch_patterns:
+        - pattern: develop
+          include: true
+          source: true
+    scripts:
+      - name: Teste teste
+        script: |
+          npx cypress run
+      - name: Install
+        script: |
+            npm install
