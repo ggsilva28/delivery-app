@@ -14,6 +14,12 @@ import { CardapioItemComponent } from './cardapio/cardapio-item/cardapio-item.co
 import { ProdutoAdicionalComponent } from './produto/produto-adicional/produto-adicional.component';
 import { ProdutoAdicionalOpcaoComponent } from './produto/produto-adicional-opcao/produto-adicional-opcao.component';
 import { ProdutoCountComponent } from './produto/produto-count/produto-count.component';
+
+//Restaurante
+import { RestauranteContatosComponent } from './restaurante/restaurante-contatos/restaurante-contatos.component';
+import { RestauranteEnderecoComponent } from './restaurante/restaurante-endereco/restaurante-endereco.component';
+import { RestauranteHorariosComponent } from './restaurante/restaurante-horarios/restaurante-horarios.component';
+
 @NgModule({
     declarations: [
         CardapioHeaderComponent,
@@ -24,6 +30,9 @@ import { ProdutoCountComponent } from './produto/produto-count/produto-count.com
         ProdutoAdicionalComponent,
         ProdutoAdicionalOpcaoComponent,
         ProdutoCountComponent,
+        RestauranteContatosComponent,
+        RestauranteEnderecoComponent,
+        RestauranteHorariosComponent,
     ],
     exports: [
         CardapioHeaderComponent,
@@ -34,6 +43,9 @@ import { ProdutoCountComponent } from './produto/produto-count/produto-count.com
         ProdutoAdicionalComponent,
         ProdutoAdicionalOpcaoComponent,
         ProdutoCountComponent,
+        RestauranteContatosComponent,
+        RestauranteEnderecoComponent,
+        RestauranteHorariosComponent,
     ],
     imports: [
         CommonModule,

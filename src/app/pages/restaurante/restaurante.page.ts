@@ -7,9 +7,15 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantePage implements OnInit {
 
+  public segment = 'horarios'
+
   constructor() { }
 
   ngOnInit() {
+  }
+
+  switchSegment(e){
+    this.segment = e.detail.value
   }
 
 }
