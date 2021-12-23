@@ -1,0 +1,31 @@
+ion-content{
+    --padding-start: 25px;
+    --padding-end: 25px;
+    --padding-top: 35px;
+    --padding-end: 25px;
+
+    p{
+        margin-top: 0px;
+        font-size: 16px;
+        font-weight: bold;
+    }
+
+    ion-item.item-round{
+        ion-label{
+            font-weight: bold;
+            font-size: 18px;
+
+            span{
+                display: block;
+                font-size: 14px;
+                font-weight: 500;
+                
+                &.gratis{
+                    font-size: 18px;
+                    color: var(--ion-color-success-tint);
+                    display: inline;
+                }
+            }
+        }
+    }
+}

@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { PreloadAllModules, RouterModule, Routes } from '@angular/router';
+import { SacolaGuard } from './guards/sacola.guard';
 
 const routes: Routes = [
   {
@@ -18,7 +19,25 @@ const routes: Routes = [
   {
     path: 'produto',
     loadChildren: () => import('./pages/produto/produto.module').then( m => m.ProdutoPageModule)
+  },
+  {
+    path: 'modal-tipo-entrega',
+    loadChildren: () => import('./modals/modal-tipo-entrega/modal-tipo-entrega.module').then( m => m.ModalTipoEntregaPageModule)
+  },
+  {
+    path: 'sacola',
+    loadChildren: () => import('./pages/sacola/sacola.module').then( m => m.SacolaPageModule),
+    canLoad: [SacolaGuard]
+  },  {
+    path: 'sacola-cliente',
+    loadChildren: () => import('./pages/sacola-cliente/sacola-cliente.module').then( m => m.SacolaClientePageModule)
+  },
+  {
+    path: 'sacola-entrega',
+    loadChildren: () => import('./pages/sacola-entrega/sacola-entrega.module').then( m => m.SacolaEntregaPageModule)
   }
+
+
 ];
 
 @NgModule({

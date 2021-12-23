@@ -14,29 +14,31 @@
 
 <ion-content class="restaurante">
 
-  <ion-item lines="none" class="restaurante-avatar">
-    <ion-avatar slot="start">
-      <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
-    </ion-avatar>
-    <ion-label>Artisan Restaurante</ion-label>
-  </ion-item>
+  <div class="page-limit">
+    <ion-item lines="none" class="restaurante-avatar">
+      <ion-avatar slot="start">
+        <img src="https://gravatar.com/avatar/dba6bae8c566f9d4041fb9cd9ada7741?d=identicon&f=y">
+      </ion-avatar>
+      <ion-label>Artisan Restaurante</ion-label>
+    </ion-item>
 
-  <ion-segment [scrollable]="true" [value]="segment" (ionChange)="switchSegment($event)">
-    <ion-segment-button value="contatos">
-      <ion-label>Contatos</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="endereco">
-      <ion-label>Endereço</ion-label>
-    </ion-segment-button>
-    <ion-segment-button value="horarios">
-      <ion-label>Horários</ion-label>
-    </ion-segment-button>
-  </ion-segment>
+    <ion-segment [scrollable]="true" [value]="segment" (ionChange)="switchSegment($event)">
+      <ion-segment-button value="contatos">
+        <ion-label>Contatos</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="endereco">
+        <ion-label>Endereço</ion-label>
+      </ion-segment-button>
+      <ion-segment-button value="horarios">
+        <ion-label>Horários</ion-label>
+      </ion-segment-button>
+    </ion-segment>
 
-  <div [ngSwitch]="segment" class="segment-content" >
-    <app-restaurante-contatos *ngSwitchCase="'contatos'"></app-restaurante-contatos>
-    <app-restaurante-endereco *ngSwitchCase="'endereco'"></app-restaurante-endereco>
-    <app-restaurante-horarios *ngSwitchCase="'horarios'" ></app-restaurante-horarios>
+    <div [ngSwitch]="segment" class="segment-content">
+      <app-restaurante-contatos *ngSwitchCase="'contatos'"></app-restaurante-contatos>
+      <app-restaurante-endereco *ngSwitchCase="'endereco'"></app-restaurante-endereco>
+      <app-restaurante-horarios *ngSwitchCase="'horarios'"></app-restaurante-horarios>
+    </div>
+
   </div>
-
 </ion-content>
