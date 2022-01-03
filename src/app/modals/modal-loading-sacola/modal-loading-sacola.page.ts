@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+
+//Lottie
 import { AnimationItem } from 'lottie-web';
 import { AnimationOptions } from 'ngx-lottie';
 
@@ -61,6 +63,6 @@ export class ModalLoadingSacolaPage implements OnInit {
 
   success(){
     this.finalizado = true
-    this.options = {...this.options, path: 'assets/animations/success.json'}
+    this.options = {...this.options, path: 'assets/animations/success.json', loop: false}
   }
 }

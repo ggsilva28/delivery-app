@@ -10,6 +10,7 @@ import { ModalLoadingSacolaPageRoutingModule } from './modal-loading-sacola-rout
 import { ModalLoadingSacolaPage } from './modal-loading-sacola.page';
 
 //Lottie
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { LottieModule } from 'ngx-lottie';
 import player from 'lottie-web';
 
@@ -24,6 +25,7 @@ export function playerFactory() {
     IonicModule,
     ComponentsModule,
     ModalLoadingSacolaPageRoutingModule,
+    BrowserAnimationsModule,
     LottieModule.forRoot({ player: playerFactory }),
   ],
   declarations: [ModalLoadingSacolaPage]
