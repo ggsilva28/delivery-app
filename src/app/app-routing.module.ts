@@ -35,6 +35,10 @@ const routes: Routes = [
   {
     path: 'sacola-entrega',
     loadChildren: () => import('./pages/sacola-entrega/sacola-entrega.module').then( m => m.SacolaEntregaPageModule)
+  },
+  {
+    path: 'modal-loading-sacola',
+    loadChildren: () => import('./modals/modal-loading-sacola/modal-loading-sacola.module').then( m => m.ModalLoadingSacolaPageModule)
   }
 
 

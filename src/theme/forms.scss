@@ -1,0 +1,29 @@
+form {
+    max-width: 680px;
+    margin: 0px auto !important;
+}
+
+ion-item.input {
+    margin-bottom: 30px;
+
+    &:last-child {
+        margin-bottom: 0px;
+    }
+
+    ion-input {
+        --padding-top: 12px !important;
+        --padding-bottom: 0px !important;
+    }
+}
+
+ion-button.btn-submit {
+    height: 45px;
+    font-size: 18px;
+    --box-shadow: none;
+    max-width: 480px;
+    margin: 0px auto;
+}
+
+.page-limit.form {
+    max-width: 680px !important;
+}

@@ -1,0 +1,36 @@
+.loading {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(var(--ion-color-primary-rgb), 0.05);
+    border-radius: 50%;
+}
+
+.page-limit {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: var(--ion-color-primary);
+    margin-bottom: 0px;
+    margin-top: 75px;
+    font-weight: 600;
+    text-align: center;
+}
+
+p {
+    max-width: 250px;
+    text-align: center;
+    line-height: 150%;
+    margin: 10px auto 0;
+}
+
+ion-button{
+    margin-top: 30px;
+}
+
+ion-footer{
+    background-color: var(--ion-color-light-tint);
+}

@@ -1,0 +1,36 @@
+<ion-header class="ion-no-border">
+  <ion-toolbar>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <div class="page-limit">
+    <div class="loading">
+      <ng-lottie class="fade-in" [options]="options" (animationCreated)="animationCreated($event)"></ng-lottie>
+    </div>
+
+    <div *ngIf="!finalizado">
+      <h1>Enviando seu pedido</h1>
+      <p>Aguarde um pouco enquanto preparemos tudo</p>
+    </div>
+
+    <div *ngIf="finalizado">
+      <h1>Pedido Enviado</h1>
+      <p>Em breve o restaurante irá confirmar seu pedido via WhatsApp</p>
+
+    </div>
+
+  </div>
+
+</ion-content>
+
+
+<ion-footer class="ion-padding" *ngIf="finalizado">
+
+  <div class="page-limit">
+    <p>Você também pode entrar em contato com o restaurante</p>
+    <ion-button color="primary" expand="block" (click)="router.go('/restaurante')" > Contatos </ion-button>
+  </div>
+
+</ion-footer>

@@ -1,0 +1,4 @@
+<ion-note *ngIf="message" slot="error" [color]="message?.type" >
+  <ion-icon name="alert-circle-outline"></ion-icon>
+  {{ message?.text }}
+</ion-note>

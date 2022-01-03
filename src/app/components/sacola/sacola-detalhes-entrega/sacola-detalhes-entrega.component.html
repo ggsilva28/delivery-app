@@ -1,0 +1,13 @@
+<ion-item class="cursor-pointer" >
+
+  <div *ngIf="icone" class="icon" slot="start">
+    <ion-icon [name]="icone" ></ion-icon>
+  </div>
+  
+  <ion-label>
+    <p>Selecionado</p>
+    <h3 *ngIf="titulo" >{{titulo}}</h3>
+    <h3 *ngIf="subtitulo" >{{subtitulo}}</h3>
+  </ion-label>
+  
+</ion-item>

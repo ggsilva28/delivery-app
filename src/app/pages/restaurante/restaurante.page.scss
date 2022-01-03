@@ -12,19 +12,35 @@
   }
 }
 
-.restaurante{
+.restaurante {
   ion-segment {
     width: 100%;
     --background: var(--ion-color-light);
-    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, .04);
+    box-shadow: 0px 3px 6px 0px rgba(0, 0, 0, 0.04);
+    margin-top: 30px;
 
     &::-webkit-scrollbar {
       display: none;
     }
   }
-
 }
 
-.segment-content{
-  padding: 15px 25px;
+.segment-content {
+  padding: 15px 0px;
+}
+
+.page-limit {
+  max-width: 1024px;
+}
+
+@media (max-width: 1280px) {
+  .segment-content {
+    padding: 15px 25px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .restaurante ion-segment {
+    box-shadow: unset;
+  }
 }

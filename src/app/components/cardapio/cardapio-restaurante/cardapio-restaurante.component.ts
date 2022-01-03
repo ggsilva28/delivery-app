@@ -4,6 +4,7 @@ import { ModalController } from '@ionic/angular';
 //services
 import { RouterService } from 'src/app/services/routes.service';
 
+//Modal
 import { ModalTipoEntregaPage } from 'src/app/modals/modal-tipo-entrega/modal-tipo-entrega.page';
 
 @Component({

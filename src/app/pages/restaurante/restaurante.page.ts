@@ -7,7 +7,7 @@ import { Component, OnInit } from '@angular/core';
 })
 export class RestaurantePage implements OnInit {
 
-  public segment = 'horarios'
+  public segment = 'contatos'
 
   constructor() { }
 

@@ -32,7 +32,7 @@
               },
               "src/manifest.webmanifest"
             ],
-            "styles": ["src/theme/variables.scss", "src/global.scss"],
+            "styles": ["src/theme/variables.scss", "src/theme/forms.scss", "src/global.scss"],
             "scripts": [],
             "aot": false,
             "vendorChunk": true,

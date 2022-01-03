@@ -29,6 +29,10 @@
     .valor {
       font-weight: bold;
       font-size: 18px;
+
+      span{
+        display: none;
+      }
     }
   }
 
@@ -38,12 +42,37 @@
     --border-radius: 5px;
     margin-left: 15px;
   }
+
+  &.simplificado {
+    border: none !important;
+    border-radius: 0px;
+    border-bottom: 1px solid var(--ion-color-medium-tint) !important;
+
+    .desc {
+      display: none;
+    }
+
+    ion-thumbnail {
+      width: 45px;
+      height: 45px;
+    }
+
+    .info {
+      .text {
+        margin-bottom: 5px;
+      }
+
+      .valor span{
+        display: unset;
+        color: var(--ion-color-primary);
+      }
+    }
+  }
 }
 
-.modal-produtos{
+.modal-produtos {
   border-radius: 15px;
 }
-
 
 @media (min-width: 1280px) {
   .cardapio-item {

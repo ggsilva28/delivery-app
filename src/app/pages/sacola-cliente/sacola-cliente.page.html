@@ -1,9 +1,43 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>sacola-cliente</ion-title>
-  </ion-toolbar>
+<ion-header class="ion-no-border">
+  <div class="page-limit form">
+
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="cardapio" icon="chevron-back" color="primary"></ion-back-button>
+      </ion-buttons>
+
+      <ion-title>
+        Adicione seus dados
+      </ion-title>
+    </ion-toolbar>
+
+  </div>
 </ion-header>
 
-<ion-content>
+<ion-content class="ion-padding">
+
+  <div class="page-limit form">
+
+    <form [formGroup]="form" >
+
+      <ion-item class="input" fill="outline">
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input formControlName="nome" id="nome" ></ion-input>
+        <form-input-message [control]="form.get('nome')" ></form-input-message>
+      </ion-item>
+
+      <ion-item class="input" fill="outline">
+        <ion-label position="floating"> Telefone/Celular </ion-label>
+        <ion-input formControlName="contato" id="contato" ></ion-input>
+        <form-input-message [control]="form.get('nome')" ></form-input-message>
+      </ion-item>
+
+    </form>
+
+  </div>
 
 </ion-content>
+
+<ion-footer class="ion-padding ion-no-border " >
+  <ion-button class="btn-submit" color="primary" expand="block" (click)="save()" > CONTINUAR </ion-button>
+</ion-footer>

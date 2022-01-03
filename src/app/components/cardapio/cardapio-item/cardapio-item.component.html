@@ -1,12 +1,13 @@
-<div class="cardapio-item ion-activatable ripple-parent" (click)="detalhes()">
+<div class="cardapio-item ion-activatable ripple-parent" (click)="detalhes()" [ngClass]="{simplificado: simplificado}">
 
   <div class="info">
     <div class="text">
       <div class="nome">Mussum Ipsum</div>
       <div class="desc">Mé faiz elementum girarzis, nisi eros vermeio. Leite de capivaris.</div>
     </div>
+
     
-    <div class="valor">R$ 18,99</div>
+    <div class="valor"> <span class="quantidade">2x</span> R$ 18,99</div>
   </div>
 
 

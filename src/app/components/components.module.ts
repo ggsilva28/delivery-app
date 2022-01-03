@@ -20,6 +20,12 @@ import { RestauranteContatosComponent } from './restaurante/restaurante-contatos
 import { RestauranteEnderecoComponent } from './restaurante/restaurante-endereco/restaurante-endereco.component';
 import { RestauranteHorariosComponent } from './restaurante/restaurante-horarios/restaurante-horarios.component';
 
+//Sacola
+import { SacolaDetalhesEntregaComponent } from './sacola/sacola-detalhes-entrega/sacola-detalhes-entrega.component';
+
+//Forms
+import { InputMessageComponent } from './forms/input-message/input-message.component';
+
 @NgModule({
     declarations: [
         CardapioHeaderComponent,
@@ -33,6 +39,8 @@ import { RestauranteHorariosComponent } from './restaurante/restaurante-horarios
         RestauranteContatosComponent,
         RestauranteEnderecoComponent,
         RestauranteHorariosComponent,
+        SacolaDetalhesEntregaComponent,
+        InputMessageComponent,
     ],
     exports: [
         CardapioHeaderComponent,
@@ -46,6 +54,8 @@ import { RestauranteHorariosComponent } from './restaurante/restaurante-horarios
         RestauranteContatosComponent,
         RestauranteEnderecoComponent,
         RestauranteHorariosComponent,
+        SacolaDetalhesEntregaComponent,
+        InputMessageComponent,
     ],
     imports: [
         CommonModule,
