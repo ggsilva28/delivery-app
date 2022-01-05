@@ -3,7 +3,7 @@
 
     <ion-toolbar>
       <ion-buttons slot="start">
-        <ion-back-button defaultHref="cardapio" icon="chevron-back" color="primary"></ion-back-button>
+        <ion-back-button (click)="router.go('/cardapio')" defaultHref="cardapio" icon="chevron-back" color="primary"></ion-back-button>
       </ion-buttons>
 
       <ion-buttons slot="end">

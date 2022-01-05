@@ -57,7 +57,8 @@ export class SacolaPage implements OnInit {
   async save() {
     const modal = await this.modalController.create({
       component: ModalLoadingSacolaPage,
-      presentingElement: this.routerOutlet.nativeEl
+      presentingElement: this.routerOutlet.nativeEl,
+      backdropDismiss: false
     });
 
     return await modal.present();

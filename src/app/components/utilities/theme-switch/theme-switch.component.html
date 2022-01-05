@@ -1,0 +1,4 @@
+<ion-button (click)="theme.toggleTheme()" color="light" class="btn-round">
+    <ion-icon name="sunny" *ngIf="theme.isDarkTheme()"></ion-icon>
+    <ion-icon name="moon" *ngIf="theme.isLightTheme()"></ion-icon>
+</ion-button>

@@ -11,8 +11,12 @@ header {
 
 }
 
+app-theme-switch{
+  margin-left: 15px;
+}
 
-@media (min-width: 1280px) {
+
+@media (min-width: 1024px) {
 
   header {
     height: 15vh;

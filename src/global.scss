@@ -25,8 +25,12 @@
 @import "~@ionic/angular/css/text-transformation.css";
 @import "~@ionic/angular/css/flex-utils.css";
 
+*{
+  transition: background-color 300ms ease-in ;
+}
+
 :root {
-  --ion-safe-area-top: 20px;
+  --ion-safe-area-top: 0px;
   --ion-safe-area-bottom: 22px;
 }
 
@@ -42,6 +46,18 @@
   background: var(--ion-color-medium-tint);
 }
 
+ion-header{
+  background: var(--ion-color-light);
+}
+
+ion-content{
+  background: var(--ion-color-light);
+}
+
+ion-footer{
+  background: var(--ion-color-light);
+}
+
 .ripple-parent {
   position: relative;
   overflow: hidden;
@@ -52,7 +68,7 @@
 }
 
 .page-limit {
-  max-width: 1280px;
+  max-width: 1024px;
   margin: 0px auto;
   position: relative;
 }
@@ -108,13 +124,14 @@
   }
 }
 
-@media (min-width: 1280px) {
+@media (min-width: 1024px) {
   .mobile-only {
     display: none !important;
   }
 
   ion-modal {
-    .modal-default {
+    
+    &.modal-default {
       --border-radius: 5px;
       box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px,
         rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
@@ -126,7 +143,7 @@
   }
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1024px) {
   .desktop-only {
     display: none !important;
   }

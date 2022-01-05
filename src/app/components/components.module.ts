@@ -26,6 +26,9 @@ import { SacolaDetalhesEntregaComponent } from './sacola/sacola-detalhes-entrega
 //Forms
 import { InputMessageComponent } from './forms/input-message/input-message.component';
 
+//Utilities
+import { ThemeSwitchComponent } from './utilities/theme-switch/theme-switch.component';
+
 @NgModule({
     declarations: [
         CardapioHeaderComponent,
@@ -41,6 +44,7 @@ import { InputMessageComponent } from './forms/input-message/input-message.compo
         RestauranteHorariosComponent,
         SacolaDetalhesEntregaComponent,
         InputMessageComponent,
+        ThemeSwitchComponent,
     ],
     exports: [
         CardapioHeaderComponent,
@@ -56,6 +60,7 @@ import { InputMessageComponent } from './forms/input-message/input-message.compo
         RestauranteHorariosComponent,
         SacolaDetalhesEntregaComponent,
         InputMessageComponent,
+        ThemeSwitchComponent,
     ],
     imports: [
         CommonModule,

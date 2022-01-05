@@ -1,19 +1,19 @@
 import { ComponentFixture, TestBed, waitForAsync } from '@angular/core/testing';
 import { IonicModule } from '@ionic/angular';
 
-import { LottieAnimationComponent } from './lottie-animation.component';
+import { ThemeSwitchComponent } from './theme-switch.component';
 
-describe('LottieAnimationComponent', () => {
-  let component: LottieAnimationComponent;
-  let fixture: ComponentFixture<LottieAnimationComponent>;
+describe('ThemeSwitchComponent', () => {
+  let component: ThemeSwitchComponent;
+  let fixture: ComponentFixture<ThemeSwitchComponent>;
 
   beforeEach(waitForAsync(() => {
     TestBed.configureTestingModule({
-      declarations: [ LottieAnimationComponent ],
+      declarations: [ ThemeSwitchComponent ],
       imports: [IonicModule.forRoot()]
     }).compileComponents();
 
-    fixture = TestBed.createComponent(LottieAnimationComponent);
+    fixture = TestBed.createComponent(ThemeSwitchComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   }));

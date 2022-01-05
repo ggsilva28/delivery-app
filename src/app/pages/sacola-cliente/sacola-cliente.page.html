@@ -20,13 +20,13 @@
 
     <form [formGroup]="form" >
 
-      <ion-item class="input" fill="outline">
+      <ion-item class="input" fill="outline" mode="md">
         <ion-label position="floating">Nome</ion-label>
         <ion-input formControlName="nome" id="nome" ></ion-input>
         <form-input-message [control]="form.get('nome')" ></form-input-message>
       </ion-item>
 
-      <ion-item class="input" fill="outline">
+      <ion-item class="input" fill="outline" mode="md">
         <ion-label position="floating"> Telefone/Celular </ion-label>
         <ion-input formControlName="contato" id="contato" ></ion-input>
         <form-input-message [control]="form.get('nome')" ></form-input-message>

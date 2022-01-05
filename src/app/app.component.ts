@@ -1,23 +1,27 @@
 import { Component } from '@angular/core';
 
+//Services
+import { ThemeService } from './services/theme.service';
+
+//Utils
+import { keys } from './utils/keys.enum';
+
 @Component({
   selector: 'app-root',
   templateUrl: 'app.component.html',
   styleUrls: ['app.component.scss'],
 })
 export class AppComponent {
-  constructor() {
+
+  constructor(
+    private theme: ThemeService,
+  ) {
     this.initializeApp()
   }
 
-  initializeApp() {
-    this.toggleTheme(false)
+  async initializeApp() {
 
-    console.log(window.location.hostname)
+    this.theme.setTheme()
   }
 
-
-  toggleTheme(val) {
-    document.body.classList.toggle('dark', val);
-  }
 }

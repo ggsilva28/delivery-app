@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ModalController } from '@ionic/angular';
 
 //Lottie
 import { AnimationItem } from 'lottie-web';
@@ -24,7 +25,8 @@ export class ModalLoadingSacolaPage implements OnInit {
   public finalizado = false;
 
   constructor(
-    public router: RouterService
+    private router: RouterService,
+    private modalController: ModalController
   ) { }
 
   ngOnInit() {
@@ -36,7 +38,6 @@ export class ModalLoadingSacolaPage implements OnInit {
   }
 
   changeAnimation(){
-    console.log('changeAnimation')
     setTimeout(() => {
       if(this.finalizado){
         return false
@@ -50,11 +51,11 @@ export class ModalLoadingSacolaPage implements OnInit {
       this.options = {...this.options, path: this.paths[this.index]}
       this.index = this.index + 1
       this.changeAnimation()
-    }, 2500)
+    }, 2000)
 
     setTimeout(() => {
       this.success()
-    }, 10000)
+    }, 8000)
   }
 
   animationCreated(animationItem: AnimationItem): void {
@@ -64,5 +65,15 @@ export class ModalLoadingSacolaPage implements OnInit {
   success(){
     this.finalizado = true
     this.options = {...this.options, path: 'assets/animations/success.json', loop: false}
+  }
+
+  contatos(){
+    this.modalController.dismiss()
+    this.router.go('/restaurante')
+  }
+
+  cardapio(){
+    this.modalController.dismiss()
+    this.router.go('/cardapio')
   }
 }

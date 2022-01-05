@@ -29,8 +29,9 @@
 <ion-footer class="ion-padding" *ngIf="finalizado">
 
   <div class="page-limit">
-    <p>Você também pode entrar em contato com o restaurante</p>
-    <ion-button color="primary" expand="block" (click)="router.go('/restaurante')" > Contatos </ion-button>
+    <ion-text color="primary" >Você também pode entrar em contato com o restaurante</ion-text>
+    <ion-button color="primary" expand="block" (click)="contatos()" > Contatos </ion-button>
+    <ion-button color="light" expand="block" (click)="cardapio()" class="voltar-cardapio" > voltar ao cardápio </ion-button>
   </div>
 
 </ion-footer>

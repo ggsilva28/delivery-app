@@ -20,19 +20,19 @@
 
     <form [formGroup]="form" >
 
-      <ion-item class="input" fill="outline">
+      <ion-item class="input" fill="outline" mode="md">
         <ion-label position="floating">Endereço</ion-label>
         <ion-input formControlName="endereco" id="endereco" ></ion-input>
         <form-input-message [control]="form.get('endereco')" ></form-input-message>
       </ion-item>
 
-      <ion-item class="input" fill="outline">
+      <ion-item class="input" fill="outline" mode="md">
         <ion-label position="floating">Número</ion-label>
         <ion-input formControlName="numero" id="numero"></ion-input>
         <form-input-message [control]="form.get('numero')" ></form-input-message>
       </ion-item>
 
-      <ion-item class="input" fill="outline">
+      <ion-item class="input" fill="outline" mode="md">
         <ion-label position="floating">Complemento</ion-label>
         <ion-input formControlName="complemento" id="complemento"></ion-input>
         <form-input-message [control]="form.get('complemento')" ></form-input-message>

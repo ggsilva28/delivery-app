@@ -1,6 +1,8 @@
 import { Component, Input, OnInit } from '@angular/core';
 import { ModalController } from '@ionic/angular';
-import { upperFirst } from 'cypress/types/lodash';
+import { IonRouterOutlet } from '@ionic/angular';
+
+//Modal
 import { ProdutoPage } from 'src/app/pages/produto/produto.page';
 
 @Component({
@@ -13,7 +15,8 @@ export class CardapioItemComponent implements OnInit {
   @Input() public simplificado: boolean = false;
 
   constructor(
-    private modal: ModalController
+    private modal: ModalController,
+    private routerOutlet: IonRouterOutlet,
   ) { }
 
   ngOnInit() { }
@@ -27,7 +30,7 @@ export class CardapioItemComponent implements OnInit {
       component: ProdutoPage,
       cssClass: 'modal-produtos',
       swipeToClose: true,
-      presentingElement: await this.modal.getTop() // Get the top-most ion-modal
+      presentingElement: this.routerOutlet.nativeEl,
 
     })
 
