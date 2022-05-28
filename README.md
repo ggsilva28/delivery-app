@@ -1,11 +1,24 @@
 
 # Delivery APP
 
-
 Application expired in big names in the delivery market by app.
-With features such as listing restaurant details, products by category, shopping cart, address control and order tracking.
 
-## 🚀 About me
+# Features
+
+- Restaurant details as: logo, namem, delivery time, open hours and address
+- Restaurant foods devided by categories with search
+- Product details with item additional
+- Shopping cart
+- Loginless orders
+- Orders details and keep up
+
+# Technologies
+
+- Ionic
+- Angular
+- Capacitor
+
+#🚀 About me
 
 I'm a full stack developer looking to learn new technologies and experiment on diferent projects.
 
