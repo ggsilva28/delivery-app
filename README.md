@@ -18,7 +18,7 @@ Application expired in big names in the delivery market by app.
 - Angular
 - Capacitor
 
-#🚀 About me
+# 🚀 About me
 
 I'm a full stack developer looking to learn new technologies and experiment on diferent projects.
 
